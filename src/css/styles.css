@@ -1,0 +1,82 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-size: 16px; /* 1rem = 10px */
+  font-family: "Noto Sans Thai", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(../img/base.webp) no-repeat center center/ cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+telefono: 480px;
+tablet: 768px;
+desktop: 992px;
+desktopXL: 1200px;
+*/
+
+.contenedor-principal {
+  width: 80vw;
+  max-width: 60rem;
+  min-height: 35rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border: 0.5rem solid black;
+  border-radius: 2rem;
+}
+
+.contenedor-botones {
+  padding: 2rem;
+}
+
+/* Cronometro */
+
+#cronometro {
+  width: 100%;
+  font-size: 8rem;
+  font-weight: bold;
+  user-select: none;
+}
+
+/* Botones */
+
+.boton {
+  width: 8rem;
+  height: 8rem;
+  font-size: 5rem;
+  margin: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+}
+
+#boton-inicio-pausa.iniciar, #boton-inicio-pausa.iniciar i {
+  background-color: #0bc00b;
+}
+
+#boton-inicio-pausa.pausar, #boton-inicio-pausa.pausar i {
+  background-color: #ffe121;
+}
+
+#boton-reiniciar {
+  background-color: #b60000;
+}
